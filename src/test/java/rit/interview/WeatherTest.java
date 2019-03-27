@@ -51,7 +51,7 @@ public class WeatherTest{
 		
 	responseAsString = res.asString();
 	jsonResponse = new JsonPath(responseAsString);
-	System.out.println("dogetrequest => "+responseAsString);	
+	//System.out.println("dogetrequest => "+responseAsString);	
 	}
 	
 	
@@ -64,36 +64,31 @@ public class WeatherTest{
 	@Test
 	public void getNumDaysWithTemp20() throws ParseException {	
 
-		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-		Set<Date> lDate = new HashSet<Date>();
-		Date dt = new Date();
+		Set<String> sDate = new HashSet<String>();
 		int listSize = jsonResponse.getInt("list.size()");
-		
-        System.out.println(listSize);
-        System.out.println(lDate);
-        for(int i=0; i< listSize; i++) {
+		for(int i=0; i< listSize; i++) {
         	Double temp = jsonResponse.getDouble("list["+i+"].main.temp");
-        	System.out.println("number "+ i +" value "+temp);
-			  if(temp-273.15 > 20.00) { 
-				  System.out.println("in for loop "+i);
-				  System.out.println(jsonResponse.getString("list["+i+"].dt_txt"));
-				 dt = formatter.parse(jsonResponse.getString("list["+i+"].dt_txt")); 
-				  }
-			 
-			  //List<Date> date = new SimpleDateFormat("dd/MM/yyyy").parse(lDate);
+        	  if(temp-273.15 > 20.00) { 
+				 String date = jsonResponse.getString("list["+i+"].dt_txt");
+				 date = date.substring(0,10);
+				 sDate.add(date);
+			  }
         }
-        System.out.println(lDate);
+        System.out.println("The number of days where the temperature is predicated to be above 20 degrees in the next 5 days = '"+sDate.size()+"'");
         
 	}
 	
-	private Date parse(String string) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-
 	@Test
 	public void getNumDaysSunny() {
-		
+		Set<String> sunny = new HashSet<String>();
+		int listSize = jsonResponse.getInt("list.size()");
+		for(int i=0; i< listSize; i++) {
+        	String mainweather = jsonResponse.getString("list["+i+"].weather[0].main");
+        	  if(mainweather.equalsIgnoreCase("sunny")) { 
+				  sunny.add(mainweather);
+			}
+        }
+        System.out.println("The number of sunny days in the next 5 days = '"+sunny.size()+"'");
+        
 	}
 }

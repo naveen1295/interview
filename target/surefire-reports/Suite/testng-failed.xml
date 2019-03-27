@@ -5,6 +5,8 @@
     <classes>
       <class name="rit.interview.WeatherTest">
         <methods>
+          <include name="verifyCity"/>
+          <include name="getNumDaysSunny"/>
           <include name="doGetRequest"/>
           <include name="getNumDaysWithTemp20"/>
         </methods>
