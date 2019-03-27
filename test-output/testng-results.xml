@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2019-03-27T04:59:14Z" name="ApiTestSuite" finished-at="2019-03-27T04:59:16Z" duration-ms="2441">
+    <groups>
+    </groups>
+    <test started-at="2019-03-27T04:59:14Z" name="ApiTest" finished-at="2019-03-27T04:59:16Z" duration-ms="2441">
+      <class name="rit.interview.WeatherTest">
+        <test-method is-config="true" signature="getUserDetails()[pri:0, instance:rit.interview.WeatherTest@7a8fa663]" started-at="2019-03-27T04:59:14Z" name="getUserDetails" finished-at="2019-03-27T04:59:14Z" duration-ms="106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserDetails -->
+        <test-method signature="doGetRequest()[pri:0, instance:rit.interview.WeatherTest@7a8fa663]" started-at="2019-03-27T04:59:14Z" name="doGetRequest" finished-at="2019-03-27T04:59:16Z" duration-ms="2271" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doGetRequest -->
+        <test-method signature="getNumDaysSunny()[pri:0, instance:rit.interview.WeatherTest@7a8fa663]" started-at="2019-03-27T04:59:16Z" name="getNumDaysSunny" finished-at="2019-03-27T04:59:16Z" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNumDaysSunny -->
+        <test-method signature="getNumDaysWithTemp20()[pri:0, instance:rit.interview.WeatherTest@7a8fa663]" started-at="2019-03-27T04:59:16Z" name="getNumDaysWithTemp20" finished-at="2019-03-27T04:59:16Z" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNumDaysWithTemp20 -->
+      </class> <!-- rit.interview.WeatherTest -->
+    </test> <!-- ApiTest -->
+  </suite> <!-- ApiTestSuite -->
+</testng-results>
