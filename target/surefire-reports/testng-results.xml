@@ -1,29 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-03-27T09:40:55Z" name="Suite" finished-at="2019-03-27T09:40:57Z" duration-ms="2943">
+  <suite started-at="2019-03-28T02:12:10Z" name="Suite" finished-at="2019-03-28T02:12:15Z" duration-ms="5343">
     <groups>
     </groups>
-    <test started-at="2019-03-27T09:40:55Z" name="Test" finished-at="2019-03-27T09:40:57Z" duration-ms="2943">
-      <class name="rit.interview.WeatherTest">
-        <test-method is-config="true" signature="doGetRequest()[pri:0, instance:rit.interview.WeatherTest@14b030a0]" started-at="2019-03-27T09:40:55Z" name="doGetRequest" finished-at="2019-03-27T09:40:56Z" duration-ms="1738" status="PASS">
+    <test started-at="2019-03-28T02:12:10Z" name="Test" finished-at="2019-03-28T02:12:15Z" duration-ms="5343">
+      <class name="Tests.GetTest">
+        <test-method is-config="true" signature="setUpConfig()[pri:0, instance:Tests.GetTest@18230356]" started-at="2019-03-28T02:12:10Z" name="setUpConfig" finished-at="2019-03-28T02:12:10Z" duration-ms="67" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- doGetRequest -->
-        <test-method signature="getNumDaysSunny()[pri:0, instance:rit.interview.WeatherTest@14b030a0]" started-at="2019-03-27T09:40:56Z" name="getNumDaysSunny" finished-at="2019-03-27T09:40:57Z" duration-ms="787" status="PASS">
+        </test-method> <!-- setUpConfig -->
+        <test-method signature="getRequest()[pri:0, instance:Tests.GetTest@18230356]" started-at="2019-03-28T02:12:10Z" name="getRequest" finished-at="2019-03-28T02:12:12Z" duration-ms="1560" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getRequest -->
+        <test-method signature="getNumDaysCloudy()[pri:1, instance:Tests.GetTest@18230356]" started-at="2019-03-28T02:12:12Z" name="getNumDaysCloudy" finished-at="2019-03-28T02:12:13Z" duration-ms="1557" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNumDaysCloudy -->
+        <test-method signature="getNumDaysRainy()[pri:1, instance:Tests.GetTest@18230356]" started-at="2019-03-28T02:12:13Z" name="getNumDaysRainy" finished-at="2019-03-28T02:12:14Z" duration-ms="842" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNumDaysRainy -->
+        <test-method signature="getNumDaysSunny()[pri:1, instance:Tests.GetTest@18230356]" started-at="2019-03-28T02:12:14Z" name="getNumDaysSunny" finished-at="2019-03-28T02:12:15Z" duration-ms="741" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getNumDaysSunny -->
-        <test-method signature="getNumDaysWithTemp20()[pri:0, instance:rit.interview.WeatherTest@14b030a0]" started-at="2019-03-27T09:40:57Z" name="getNumDaysWithTemp20" finished-at="2019-03-27T09:40:57Z" duration-ms="398" status="PASS">
+        <test-method signature="getNumDaysWithTempabove()[pri:1, instance:Tests.GetTest@18230356]" started-at="2019-03-28T02:12:15Z" name="getNumDaysWithTempabove" finished-at="2019-03-28T02:12:15Z" duration-ms="622" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getNumDaysWithTemp20 -->
-        <test-method signature="verifyCity()[pri:0, instance:rit.interview.WeatherTest@14b030a0]" started-at="2019-03-27T09:40:57Z" name="verifyCity" finished-at="2019-03-27T09:40:57Z" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCity -->
-      </class> <!-- rit.interview.WeatherTest -->
+        </test-method> <!-- getNumDaysWithTempabove -->
+      </class> <!-- Tests.GetTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
